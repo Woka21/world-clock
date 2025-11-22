@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TimeZone",
+  "name": "{{CITY}} Time",
+  "identifier": "{{TZ_IDENTIFIER}}",
+  "mainEntityOfPage": "https://exactimenow.com{{PATH}}",
+  "dateModified": "{{ISO_NOW}}",
+  "about": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What time is it now in {{CITY}}?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The exact time now in {{CITY}} is shown live above with seconds."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does {{CITY}} observe daylight saving time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{DST_ANSWER}}"
+        }
+      }
+    ]
+  }
+}
